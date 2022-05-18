@@ -13,7 +13,10 @@
 body{
   font-family: 'Inter', sans-serif;
 }
-
+/* btn forside */
+.btn-f{
+  margin-top: 6em;
+}
 /* baggrund forside */
 .forside-kids{
   position: absolute;
@@ -59,7 +62,8 @@ background: #afebf9;
 /*!!! speech bubble !!! */
 
 .speech-bubble{
-  width: 30%;
+  min-width: 20%;
+  max-width: 30%;
   background: whitesmoke;
   position: absolute;
   border-radius: 10px;
@@ -104,21 +108,9 @@ font-size: x-large;
 /*!!! checkbox !!!*/
 
 /* img checkbox styling */
-@media screen and (min-width: 768px){
-  .img-c{
-    height: 50px;
-  }
-  .margarine{
-    width: 60px;
-  }
-}
-
 .img-c{
-  width: 20%;
+  width: 50%;
   height: auto;
-}
-.margarine{
-  width: 70px;
 }
 .maengde{
   font-size: medium;

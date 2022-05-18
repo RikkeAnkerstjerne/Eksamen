@@ -24,19 +24,20 @@ for (let i = 0; i < splitText.length; i++) {
 function show(){
     document.querySelector(".lydikon").style.display = "none";  
     document.querySelector(".klik").style.display = "none";
- let char = 0;
- let timer = setInterval(onTick, 50);
- function onTick(){
-    const span = text.querySelectorAll(".intro span")[char];
-    span.classList.add("fade");
-    char++;
-    if (char === splitText.length) {
+    
+    let char = 0;
+    let timer = setInterval(onTick, 50);
+    function onTick(){
+      const span = text.querySelectorAll(".intro span")[char];
+      span.classList.add("fade");
+      char++;
+      if (char === splitText.length) {
         complete();
         return;
+       }
     }
- }
- function complete(){
-    clearInterval(timer);
-    timer = null;
- }
+    function complete(){
+      clearInterval(timer);
+      timer = null;
+    }
 }
