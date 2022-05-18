@@ -9,6 +9,25 @@
   width: 80px;
 }
 
+/* fond */
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+/* baggrund forside */
+.forside-kids{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+
+.forside-mini{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
 /* Baggrundsfarve */
 
 .bg{
@@ -40,7 +59,7 @@ background: #afebf9;
 /*!!! speech bubble !!! */
 
 .speech-bubble{
-  width: 23%;
+  width: 30%;
   background: whitesmoke;
   position: absolute;
   border-radius: 10px;
@@ -59,6 +78,11 @@ background: #afebf9;
   margin: 13px 0 0 -25px;
 }
 
+/* lydikon */
+.lydikon{
+  width: 50px;
+  margin-top: 100px;
+}
 /* fremgangsmåde overskrift */
 .fremgang{
 font-size: x-large;
@@ -72,7 +96,7 @@ font-size: x-large;
   display: inline;
 }
 
-span.fade {
+.intro span.fade {
   opacity: 1;
   transform: translateY(0px)
 }
@@ -80,11 +104,28 @@ span.fade {
 /*!!! checkbox !!!*/
 
 /* img checkbox styling */
+@media screen and (min-width: 768px){
+  .img-c{
+    height: 50px;
+  }
+  .margarine{
+    width: 60px;
+  }
+}
+
 .img-c{
-  width: 100px;
+  width: 20%;
+  height: auto;
+}
+.margarine{
+  width: 70px;
 }
 .maengde{
   font-size: medium;
+}
+.langs{
+  display: flex;
+  justify-content: space-around
 }
 /* Customize the label (the container) */
 .container-c {
